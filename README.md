@@ -134,7 +134,7 @@ If all is well you should see:
 
 ### Verify Tensorflow is set up correctly to see the GPU
 
-Activate the PytTensorflow virtualenv and open/run the jupyter/verify-tensorflow.ipynb:
+Activate the Tensorflow virtualenv and open/run the jupyter/verify-tensorflow.ipynb:
 
     aaron@nano:~$ py3.6.9_Tensorflow_jp4.4.1 
     (py3.6.9_Tensorflow_jp4.4.1) aaron@nano:~$ jlab
