@@ -10,7 +10,7 @@
 ## Debugging crashing JupyterLAB notebook
 
 Symptoms:
-    When running the first cell in the jupyter/gpucheck-torch.ipynb, the kernel would silently crash, no clues in the usual system logs.. 
+    When running the first cell in the jupyter/verify-pytorch.ipynb, the kernel would silently crash, no clues in the usual system logs.. 
     Also reproduced from iPython command line, so nothing to do with JupyterLAB:
 
     python -c 'import torch'
