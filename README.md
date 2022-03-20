@@ -17,8 +17,9 @@ Once complete, insert the microSD card into the Nano and fire it up. If all is w
 
 [Boot from USB](https://www.youtube.com/watch?v=J9EJ52Za7IE) (optional)
 
-Next, as my microSD card was pretty small (and slow) I purchased a [256GB fast USB stick](https://www.amazon.com/gp/product/B08GY3Z4JR/ref=ppx_yo_dt_b_asin_title_o06_s00?ie=UTF8&psc=1) and followed the steps described in the JetsonHacks link above.
+As my microSD card was pretty small (and slow) I purchased a [256GB fast USB stick](https://www.amazon.com/gp/product/B08GY3Z4JR/ref=ppx_yo_dt_b_asin_title_o06_s00?ie=UTF8&psc=1) and followed the steps described in the JetsonHacks link above.
 So now the SD card is only used for booting up - the root filesystem and all the apps now live on the fast USB stick.
+Noice!
 
 [PiOLED screen](https://www.amazon.com/gp/product/B07MM68H8M/ref=ppx_yo_dt_b_asin_title_o07_s00?ie=UTF8&psc=1) (optional)
 
