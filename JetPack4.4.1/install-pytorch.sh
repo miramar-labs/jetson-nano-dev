@@ -22,15 +22,17 @@ pip3 install Cython
 # Pytorch
 pip3 install numpy torch-1.10.0-cp36-cp36m-linux_aarch64.whl
 
+# Cleanup
+rm -f torch-1.10.0-cp36-cp36m-linux_aarch64.whl
+
 # Torchvision
 sudo apt-get install -y libjpeg-dev zlib1g-dev libpython3-dev libavcodec-dev libavformat-dev libswscale-dev
 git clone --branch v0.11.1 https://github.com/pytorch/vision torchvision   # see below for version of torchvision to download
-cd torchvision
-export BUILD_VERSION=0.11.1  # where 0.x.0 is the torchvision version  
+pushd torchvision
+export BUILD_VERSION=0.11.1  
 python3 setup.py install --user
-cd ../  # attempting to load torchvision from build dir will result in import error
-pip install 'pillow<7' # always
+popd 
+pip3 install 'pillow<7' # always
 
-# Cleanup
-rm -f torch-1.10.0-cp36-cp36m-linux_aarch64.whl
+
 
