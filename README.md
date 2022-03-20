@@ -56,7 +56,9 @@ From your SSH terminal, start the VSCode server:
 
         codesvr
 
-Then you should be able to access VSCode from your laptop/iPad browser:
+Then you should be able to access VSCode from your laptop/iPad browser, eg:
+
+    http://nano.local:8080
 
 ![](res/vscode-login.png)
 
