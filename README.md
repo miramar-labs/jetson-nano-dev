@@ -54,7 +54,7 @@ As mentioned before, I SSH into the Nano, and from there I mainly use two develo
 
 From your SSH terminal, start the VSCode server:
 
-        codesvr
+    codesvr
 
 Then you should be able to access VSCode from your laptop/iPad browser, eg:
 
@@ -123,7 +123,7 @@ If all is well you should see something like this:
 
 ### Verify PyTorch is set up correctly to see the GPU
 
-Activate the Pytorch virtualenv and run the jupyter/verify-pytorch.ipynb:
+Run jupyter/verify-pytorch.ipynb:
 
     aaron@nano:~$ py3.6.9_PyTorch_jp4.4.1 
     (py3.6.9_PyTorch_jp4.4.1) aaron@nano:~$ jlab
@@ -134,7 +134,7 @@ If all is well you should see:
 
 ### Verify Tensorflow is set up correctly to see the GPU
 
-Activate the Tensorflow virtualenv and run the jupyter/verify-tensorflow.ipynb:
+Run jupyter/verify-tensorflow.ipynb:
 
     aaron@nano:~$ py3.6.9_Tensorflow_jp4.4.1 
     (py3.6.9_Tensorflow_jp4.4.1) aaron@nano:~$ jlab
