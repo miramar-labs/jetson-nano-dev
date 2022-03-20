@@ -123,7 +123,7 @@ If all is well you should see something like this:
 
 ### Verify PyTorch is set up correctly to see the GPU
 
-Open the jupyter/verify-pytorch.ipynb and run it:
+Activate the Pytorch virtualenv and open/run the jupyter/verify-pytorch.ipynb:
 
     aaron@nano:~$ py3.6.9_PyTorch_jp4.4.1 
     (py3.6.9_PyTorch_jp4.4.1) aaron@nano:~$ jlab
@@ -134,7 +134,7 @@ If all is well you should see:
 
 ### Verify Tensorflow is set up correctly to see the GPU
 
-Open the jupyter/verify-tensorflow.ipynb and run it:
+Activate the PytTensorflow virtualenv and open/run the jupyter/verify-tensorflow.ipynb:
 
     aaron@nano:~$ py3.6.9_Tensorflow_jp4.4.1 
     (py3.6.9_Tensorflow_jp4.4.1) aaron@nano:~$ jlab
