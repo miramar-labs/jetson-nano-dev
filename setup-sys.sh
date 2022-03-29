@@ -87,6 +87,9 @@ if [[ "$PIOLED" == 1 ]]; then
     popd
 fi
 
+# SMBUS for UPS
+sudo apt-get install -y python-smbus
+
 echo "rebooting.. please wait a bit then reconnect..."
 
 # Cleanup

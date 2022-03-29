@@ -1,6 +1,8 @@
 import smbus
 import time
 
+# sudo apt-get install python3-smbus
+
 # Config Register (R/W)
 _REG_CONFIG                 = 0x00
 # SHUNT VOLTAGE REGISTER (R)
