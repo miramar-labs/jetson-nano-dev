@@ -21,9 +21,12 @@ As my microSD card was pretty small (and slow) I purchased a [256GB fast USB sti
 So now the SD card is only used for booting up - the root filesystem and all the apps now live on the fast USB stick.
 Noice!
 
-[PiOLED screen](https://www.amazon.com/gp/product/B07MM68H8M/ref=ppx_yo_dt_b_asin_title_o07_s00?ie=UTF8&psc=1) (optional)
+[UPS Module + OLED](https://www.waveshare.com/product/ai/expansions/power-supply/ups-power-module.htm) (optional)
 
-I invested in a piOLED screen as primarily I will use this in headless mode, so will need to know the nano's IP address for SSH etc. It also displays GPU/MEM/DISK usage which is nice. 
+I needed a power adapter and found this UPS kit, which even came with an OLED screen for monitoring whatever you want. As primarily I will use the Nano in headless mode, I will need to know it's IP address for SSH etc. You can display anything you want on the OLED, so far I've got IP, GPU, MEM, CPU, Batt%.
+
+[PWM Fan](https://www.jetsonhacks.com/2019/09/08/jetson-nano-add-a-fan/)(optional)
+I splurged on the recommended fan, supporting PWM.
 
 [Wifi/Bluetooth](https://www.youtube.com/watch?v=v_neNpfQ38Q)
 
