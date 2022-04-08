@@ -28,6 +28,9 @@ I needed a power adapter and found this UPS kit, which even came with an OLED sc
 [PWM Fan](https://www.jetsonhacks.com/2019/09/08/jetson-nano-add-a-fan/)(optional)
 I splurged on the recommended fan, supporting PWM.
 
+[Camera](https://www.amazon.com/gp/product/B07RWCGX5K/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1)(optional)
+I got a simple camera for image recognition projects.
+
 [Wifi/Bluetooth](https://www.youtube.com/watch?v=v_neNpfQ38Q)
 
 I use a cheap USB wifi adapter but you can also free up a USB port and install a wifi/bluetooth card as described in the link above.
