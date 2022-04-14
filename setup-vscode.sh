@@ -10,8 +10,8 @@ yarn global add code-server
 
 if [[ -f "$HOME/.config/code-server/config.yaml" ]]; then
     rm -f $HOME/.config/code-server/config.yaml
-    touch $HOME/.config/code-server/config.yaml
 fi
+touch $HOME/.config/code-server/config.yaml
 tee -a $HOME/.config/code-server/config.yaml >/dev/null <<EOF
 bind-addr: 0.0.0.0:8080
 auth: password
@@ -21,8 +21,8 @@ EOF
 
 if [[ -f "/etc/systemd/system/code-server.service" ]]; then
     sudo rm -f /etc/systemd/system/code-server.service
-    sudo touch /etc/systemd/system/code-server.service
 fi
+sudo touch /etc/systemd/system/code-server.service
 sudo tee -a /etc/systemd/system/code-server.service >/dev/null <<EOF
 [Unit]
 Description=code-server
