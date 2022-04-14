@@ -304,7 +304,7 @@ while True:
     # Shell scripts for system monitoring from here : https://unix.stackexchange.com/questions/119126/command-to-display-memory-usage-disk-usage-and-cpu-load
     
     # MEM
-    cmd = "free -m | awk 'NR==2{printf \"Mem:  %.0f%% %s/%s M\", $3*100/$2, $3,$2 }'"
+    cmd = "free -m | awk 'NR==2{printf \"Mem:  %.0f%% %s/%s MB\", $3*100/$2, $3,$2 }'"
     MemUsage = subprocess.check_output(cmd, shell=True)
     lines.append(MemUsage)
     
