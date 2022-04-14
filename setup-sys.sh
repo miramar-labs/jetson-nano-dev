@@ -74,15 +74,9 @@ if [ "$CODESVR_LINES" -eq 0 ];then
     echo "alias codesvr='~/.yarn/bin/code-server'" >> ~/.bashrc
 fi
 
+# PiOLED
 if [[ "$PIOLED" == 1 ]]; then
-# Setup and tweak my piOLED
-    if [[ -d "./installPiOLED" ]]; then
-            sudo rm -rf ./installPiOLED
-    fi
-    git clone https://github.com/JetsonHacksNano/installPiOLED.git
     pushd ./installPiOLED
-    mv ./pioled/stats.py ./pioled/stats.py.orig
-    cp ../utils/stats.py ./pioled/
     bash ./installPiOLED.sh
     bash ./createService.sh
     popd
