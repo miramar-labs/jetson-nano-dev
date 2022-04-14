@@ -14,4 +14,3 @@ setup(
     package_data={},
     platforms=["linux", "linux2"]
 )
-© 2022 GitHub, Inc.
