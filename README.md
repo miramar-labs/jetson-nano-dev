@@ -17,6 +17,8 @@ Once complete, insert the microSD card into the Nano and fire it up. If all is w
 
 [Boot from USB](https://www.youtube.com/watch?v=J9EJ52Za7IE) (optional)
 
+[GitHub](https://github.com/JetsonHacksNano/rootOnUSB)
+
 As my microSD card was pretty small (and slow) I purchased a [256GB fast USB stick](https://www.amazon.com/gp/product/B08GY3Z4JR/ref=ppx_yo_dt_b_asin_title_o06_s00?ie=UTF8&psc=1) and followed the steps described in the JetsonHacks link above.
 So now the SD card is only used for booting up - the root filesystem and all the apps now live on the fast USB stick.
 Noice!
@@ -25,10 +27,10 @@ Noice!
 
 I needed a power adapter and found this UPS kit, which even came with an OLED screen for monitoring whatever you want. As primarily I will use the Nano in headless mode, I will need to know it's IP address for SSH etc. You can display anything you want on the OLED, so far I've got IP, GPU, MEM, CPU, Batt%.
 
-[PWM Fan](https://www.jetsonhacks.com/2019/09/08/jetson-nano-add-a-fan/)(optional)
+[PWM Fan](https://www.jetsonhacks.com/2019/09/08/jetson-nano-add-a-fan/) (optional)
 I splurged on the recommended fan, supporting PWM.
 
-[Camera](https://www.amazon.com/gp/product/B07RWCGX5K/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1)(optional)
+[Camera](https://www.amazon.com/gp/product/B07RWCGX5K/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1) (optional)
 I got a simple camera for image recognition projects.
 
 [Wifi/Bluetooth](https://www.youtube.com/watch?v=v_neNpfQ38Q)

@@ -5,7 +5,7 @@ source versions.sh
 
 # System - passwordless sudo
 if [[ "$PASSWORDLESS" == 1 ]]; then
-if [[ -d "/etc/sudoers.d/$USER" ]]; then
+if [[ ! -f "/etc/sudoers.d/$USER" ]]; then
 sudo tee -a /etc/sudoers.d/$USER >/dev/null <<EOF
 $USER ALL=(ALL) NOPASSWD:ALL
 EOF
@@ -14,10 +14,11 @@ fi
 
 # Build Tools and dev packages
 sudo apt update -y
-sudo apt install -y lvm2 vim tree git curl wget terminator tmux ufw gdown gparted
+sudo apt install -y apt-utils lvm2 vim tree git curl wget terminator tmux ufw gparted neofetch
 sudo apt install -y build-essential cmake pkg-config unzip yasm checkinstall
-sudo apt install -y tcl-dev tk-devlibsqlite3-dev zlib1g-dev libatlas-base-dev libhdf5-serial-dev hdf5-tools libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev
+sudo apt install -y tcl-dev zlib1g-dev libatlas-base-dev libhdf5-serial-dev hdf5-tools libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev
 sudo apt install -y libzmq3-dev libbbz2-dev liblzma-dev
+#sudo apt install -y tk-devlibsqlite3-dev 
 
 # Swap file
 SWAPFILE_LINES=`sudo grep '/swapfile' /etc/fstab | wc -l`
@@ -36,7 +37,7 @@ sudo jetson_clocks
 sudo nvpmodel -m 0
 
 # System Python3 pip/virtualenv
-sudo apt install -y python3-pip python3-dev virtualenv
+sudo apt install -y python3-pip python3-dev virtualenv gdown
 
 # System Jetson Stats (jtop)
 sudo -H pip3 install -U jetson-stats
@@ -85,6 +86,11 @@ if [[ "$PIOLED" == 1 ]]; then
     bash ./installPiOLED.sh
     bash ./createService.sh
     popd
+fi
+
+NEOFETCH_LINES=`grep 'neofetch' ~/.bashrc | wc -l`
+if [ "$NEOFETCH_LINES" -eq 0 ];then
+    echo "neofetch" >> ~/.bashrc
 fi
 
 # SMBUS for UPS
