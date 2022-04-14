@@ -353,5 +353,5 @@ while True:
     disp.image(image)
     disp.display()
     # 1.0 = 1 second; The divisor is the desired updates (frames) per second
-    time.sleep(10.0)
+    time.sleep(3.0)
 
