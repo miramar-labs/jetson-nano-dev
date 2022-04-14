@@ -335,7 +335,7 @@ while True:
     lines.append("Load Voltage:{:6.3f} V".format(bus_voltage))
     lines.append("Current:     {:6.3f} A".format(current/1000))
     lines.append("Power:       {:6.3f} W".format(power))
-    lines.append("Pwr:         {:3.0f} %".format(p))
+    lines.append("UPS Charge:  {:3.0f} %".format(p))
 
     # Now draw 4 lines - in rotation
     draw.text((x, top),   lines[idx], font=font, fill=255)
