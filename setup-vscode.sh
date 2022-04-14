@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+
+# NOTE: works best in firefox
+
+
 curl -fsSL https://deb.nodesource.com/setup_14.x | sudo -E bash -
 
 sudo apt-get install -y nodejs
@@ -7,17 +11,6 @@ sudo apt-get install -y nodejs
 sudo npm -g install yarn
 
 yarn global add code-server
-
-if [[ -f "$HOME/.config/code-server/config.yaml" ]]; then
-    rm -f $HOME/.config/code-server/config.yaml
-fi
-touch $HOME/.config/code-server/config.yaml
-tee -a $HOME/.config/code-server/config.yaml >/dev/null <<EOF
-bind-addr: 0.0.0.0:8080
-auth: password
-password: changeme
-cert: false
-EOF
 
 if [[ -f "/etc/systemd/system/code-server.service" ]]; then
     sudo rm -f /etc/systemd/system/code-server.service
@@ -34,7 +27,7 @@ Group=$USER
 
 WorkingDirectory=/home/$USER
 Environment="PATH=/usr/bin"
-ExecStart=/home/$USER/.yarn/bin/code-server
+ExecStart=/home/$USER/.yarn/bin/code-server --cert
 
 [Install]
 WantedBy=multi-user.target
