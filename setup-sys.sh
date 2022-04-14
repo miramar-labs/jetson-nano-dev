@@ -37,7 +37,7 @@ sudo jetson_clocks
 sudo nvpmodel -m 0
 
 # System Python3 pip/virtualenv
-sudo apt install -y python3-pip python3-dev virtualenv gdown
+sudo apt install -y python3-pip python3-dev virtualenv gdown python3-smbus
 
 # System Jetson Stats (jtop)
 sudo -H pip3 install -U jetson-stats
