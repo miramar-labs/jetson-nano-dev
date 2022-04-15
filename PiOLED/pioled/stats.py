@@ -339,11 +339,8 @@ while True:
 
     # Now draw 4 lines - in rotation
     draw.text((x, top),   lines[idx], font=font, fill=255)
-    #idx = (idx + 1) % len(lines)
     draw.text((x, top+8), lines[(idx + 1) % len(lines)], font=font, fill=255)
-    #idx = (idx + 1) % len(lines)
     draw.text((x, top+16), lines[(idx + 2) % len(lines)], font=font, fill=255)
-    #idx = (idx + 1) % len(lines)
     draw.text((x, top+25), lines[(idx + 3) % len(lines)], font=font, fill=255)
     
     idx = (idx + 1) % len(lines)
