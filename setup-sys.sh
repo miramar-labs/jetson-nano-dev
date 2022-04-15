@@ -87,6 +87,11 @@ if [ "$NEOFETCH_LINES" -eq 0 ];then
     echo "neofetch" >> ~/.bashrc
 fi
 
+PWRLEFT_LINES=`grep 'alias pwrleft' ~/.bashrc | wc -l`
+if [ "$PWRLEFT_LINES" -eq 0 ];then
+    echo "alias pwrleft='python3 ~/jetson-nano-dev/utils/pwrleft.py'" >> ~/.bashrc
+fi
+
 # SMBUS for UPS
 sudo apt-get install -y python-smbus
 
