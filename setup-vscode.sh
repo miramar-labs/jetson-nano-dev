@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 
-# NOTE: works best in firefox
+# NOTE: works best in firefox or Safari
 
 
 curl -fsSL https://deb.nodesource.com/setup_14.x | sudo -E bash -
