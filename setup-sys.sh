@@ -76,7 +76,7 @@ fi
 
 # PiOLED
 if [[ "$PIOLED" == 1 ]]; then
-    pushd ./installPiOLED
+    pushd ./PiOLED
     bash ./installPiOLED.sh
     bash ./createService.sh
     popd
